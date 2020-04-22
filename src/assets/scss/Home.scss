@@ -1,0 +1,121 @@
+// @import '@scss/_variable.scss';
+// @import '~assets/scss/_fonts.scss';
+
+////////////////////////////////////////////////////////////////////////////////////
+///////////////////////// Color variables Start from here////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+$primary-gradient: #dfd18b !default;
+$secondary-gradient: #cdab4f !default;
+$gradient-color: linear-gradient(#cdab4f, #dfd18b) !default;
+$gradient-color-right:linear-gradient(to right, #dfd18b, #cdab4f) !default;
+$btn-bg: linear-gradient(to right, #d9c24b, #cdac4f) !default;
+$header-bg:linear-gradient(to right,#0f3454,#030222) !default;
+$black: #000000 !default;
+$green:#008000!default;
+$red: #ff3846 !default;
+$white: #ffffff !default;
+$purple: #2e262d !default;
+$light-grey: #d0d0d0 !default;
+$dark-grey: #202020 !default;
+$yellow:#decf87 !default;
+$grey: #666 !default;
+$input-placeholder:#838383 !default;
+$firasansregular: fira_sansregular !default;
+$banner-overlay:rgba(0, 0, 0, 0.7);
+$font-14:14px !default;
+$font-16:16px !default;
+$font-18:18px !default;
+$font-24:24px !default;
+$blue: #0080ff !default;
+$placeholder:#c6c6c6!default;
+$box-grey:#e0e0e0!default;
+$datepicker-box:#ced4da!default;
+$input-box:#0f3454 !default;
+$checkbox:#aaa !default;
+$dimgrey: #696969 !default;
+$overlay-color-opacity:rgba(0, 0, 0, 0.3)!default;
+$loading-data:#3498db!default;
+$section-bg:#f7f1f1!default;
+$active-btn-yellow:#FFA726!default;
+$light-pink:#e86769 !default;
+$icon-color:#f5eeee !default;
+$date-grey:#bdbdbd!default;
+
+////////////////////////////////////////////////////////////////////////////////////
+//////////////////////// Font class Start from here////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+@font-face {
+  font-family: 'fira_sansregular';
+  src: url('/fonts/firasans-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fira_sansregular';
+  src: url('/fonts/firasans-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700&display=swap');
+.firsans-regular {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: normal;
+}
+
+.firsans-semibold {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+}
+
+.firsans-bold {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 600;
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////Normal CSS class Start from here////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: normal;
+}
+
+*:focus {
+  outline: none !important;
+}
+.btn-secondary:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: none !important;
+}
+.error-txt {
+  color: $red;
+  font-size: 12px;
+}
+input {
+  font-size: 14px;
+  border: 1px solid $input-box;
+  padding-left: 5px;
+  color: $input-box;
+  border-radius: 0;
+  height: 30px;
+}
+input::placeholder {
+  color: $placeholder;
+  font-style: italic;
+}
+
+.section-bg{
+  background:$section-bg;
+}
+.v-application a {
+  text-decoration: none;
+}
+
+
+.v-application--wrap .margin-bt-4{
+  margin-bottom: 4rem;
+}
